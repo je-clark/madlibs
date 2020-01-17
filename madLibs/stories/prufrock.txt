@@ -1,0 +1,19 @@
+From the Love Story of J. Alfred Prufrock
+
+By T.S. Elliot and {{ your_name }}
+
+And indeed there will be {{ noun_1 }}
+For the {{ adjective_1 }} smoke that slides along the {{ noun_2 }},
+{{ gerund_1|capitalize }} its back upon the {{ noun_3 }};
+There will be {{ noun_1 }}, there will be {{ noun_1 }}
+To prepare a {{ noun_4 }} to meet the {{ plural_of_noun_4 }} that you meet;
+There will be {{ noun_1 }} to {{ verb_1 }} and {{ verb_1_opposite }},
+And {{ noun_1 }} for all the works and days of hands
+That {{ verb_2 }} and {{ verb_2_opposite }} a question on your {{ noun_5 }};
+{{ noun_1|capitalize }} for you and {{ noun_1 }} for me,
+And {{ noun_1 }} yet for {{ number_1 }} {{ rhyming_noun_1 }},
+And for {{ number_1 }} {{ rhyming_noun_2 }} and {{ rhyming_noun_3 }},
+Before the taking of a toast and tea.
+
+In the room the {{ plural_noun_1 }} come and go
+Talking of {{ proper_noun_1|capitalize }}.
