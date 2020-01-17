@@ -1,0 +1,11 @@
+From Walden
+
+By Henry David Thoreau and {{ your_name }}
+
+We must learn to reawaken and keep ourselves awake, not by {{adjective_1}} aids,
+but by an {{adjective_2}} expectation of the {{noun_1}}, which does not {{verb_1}} us even in our {{superlative_adjective_1}} sleep.
+I know of no more encouraging {{noun_2}} than the unquestionable {{noun_3}} of man to {{verb_2}} his life by a conscious {{noun_4}}.
+It is something to be able to {{verb_3}} a particular {{noun_5}}, or to {{verb_4}} a statue, and so to make a few objects {{adjective_3}};
+but it is far more {{adjective_4}} to {{verb_4}} and {{verb_3}} the very atmosphere and medium through which we {{verb_5}},
+which morally we can do.
+To {{verb_6}} the {{noun_6}} of the {{noun_7}}, that is the highest of arts.

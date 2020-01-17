@@ -1,0 +1,23 @@
+Stopping by {{ plural_noun_1|capitalize }} on a {{ noun_3|capitalize ~ 'y' }} Evening
+
+by Robert Frost and {{ your_name }}
+
+Whose {{ plural_noun_1 }} these are I think I know.   
+His {{ noun_1 }} is in the {{ noun_2 }} though;   
+He will not see me stopping here   
+To watch his {{ plural_noun_1 }} fill up with {{ noun_3 }}.   
+
+My little {{ noun_4 }} must think it queer   
+To stop without a {{ noun_5 }} near   
+Between the {{ plural_noun_1 }} and {{ adjective_1 }} lake   
+The {{ superlative_adjective_1 }} evening of the year.   
+
+He gives his {{ noun_6 }} a shake   
+To {{ verb_1 }} if there is some mistake.   
+The only other sound’s the sweep   
+Of {{ adjective_2 }} wind and downy {{ noun_7 }}.   
+
+The {{ plural_noun_1 }} are {{ adjective_3 }}, dark and deep,   
+But I have {{ plural_noun_2 }} to keep,   
+And {{ plural_noun_3 }} to {{ verb_2 }} before I {{ verb_3 }},   
+And {{ plural_noun_3 }} to {{ verb_2 }} before I {{ verb_3 }}.
