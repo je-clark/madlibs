@@ -3,7 +3,8 @@ import argparse, os
 
 def madlibs(directory, filename):
     env = Environment(
-        loader = FileSystemLoader(searchpath=directory)
+        loader = FileSystemLoader(searchpath=directory),
+        trim_blocks=True
     )
 
     template_src = env.loader.get_source(env, filename)
@@ -21,6 +22,8 @@ def madlibs(directory, filename):
     print()
 
     for item in keys:
+        if item == "range":
+            continue
         prompt = ' '.join(item.split(r'_'))
         madlibs_substitutions[item] = input(f'{prompt}: ')
 
