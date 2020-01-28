@@ -24,7 +24,7 @@ def madlibs(directory, filename):
     for item in keys:
         if item == "range":
             continue
-        prompt = ' '.join(item.split(r'_'))
+        prompt = item.replace('_',' ')
         madlibs_substitutions[item] = input(f'{prompt}: ')
 
     result = template.render(madlibs_substitutions)
