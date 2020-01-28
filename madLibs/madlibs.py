@@ -8,10 +8,7 @@ def madlibs(directory, filename):
     )
 
     template_src = env.loader.get_source(env, filename)
-    template = env.get_template(filename)
     parsed = env.parse(template_src)
-
-
     var = meta.find_undeclared_variables(parsed)
     keys = list(var)
     keys.sort()
@@ -27,6 +24,7 @@ def madlibs(directory, filename):
         prompt = item.replace('_',' ')
         madlibs_substitutions[item] = input(f'{prompt}: ')
 
+    template = env.get_template(filename)
     result = template.render(madlibs_substitutions)
 
     print()
