@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+    <title>Mad Libs!</title>
+</head>
+<body>
+    <form action="/show_output" method="post">
+    <fieldset>
+        <legend>{{ story_name }}</legend>
+        <input type="hidden" name="story_name" value="{{ story_name }}">
+        {% for var in variables %}
+        {{ var|replace("_"," ")}}:<br>
+        <input type="text" name="{{ var }}"><br>
+        {% endfor %}
+        <input type="submit" value="Submit">
+    </fieldset>
+    </form>
+</body>

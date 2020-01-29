@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<head>
+    <title>Mad Libs!</title>
+</head>
+<body>
+    <h1>Choose from the following mad libs!</h1>
+    {% for story in story_list %}
+    <p><a href="/show_form?story={{ story }}">{{ story }}</a></p>
+    {% endfor %}
+</body>
