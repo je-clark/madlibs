@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block body %}
+    <h2>Choose from the following mad libs!</h2>
+    {% for story in story_list %}
+    <p><a href="/show_form?id={{ story.id }}">{{ story.name }}</a></p>
+    {% endfor %}
+{% endblock %}
