@@ -1,0 +1,85 @@
+{
+    "stories": [
+        {
+            "id": 1,
+            "name": "The Woods",
+            "template": "woods.txt",
+            "portrait": "/portraits/robert_frost.jpg",
+            "attributes": [
+                {"type": "Your Name", "var_name": "your_name"},
+                {"type": "Plural Noun", "var_name": "plural_noun_1"},
+                {"type": "Plural Noun", "var_name": "plural_noun_2"},
+                {"type": "Plural Noun", "var_name": "plural_noun_3"},
+                {"type": "Noun", "var_name": "noun_1"},
+                {"type": "Noun", "var_name": "noun_2"},
+                {"type": "Noun", "var_name": "noun_3"},
+                {"type": "Noun", "var_name": "noun_4"},
+                {"type": "Noun", "var_name": "noun_5"},
+                {"type": "Noun", "var_name": "noun_6"},
+                {"type": "Noun", "var_name": "noun_7"},
+                {"type": "Adjective", "var_name": "adjective_1"},
+                {"type": "Adjective", "var_name": "adjective_2"},
+                {"type": "Adjective", "var_name": "adjective_3"},
+                {"type": "Superlative Adjective", "var_name": "super_adjective_1"},
+                {"type": "Verb", "var_name": "verb_1"},
+                {"type": "Verb", "var_name": "verb_2"},
+                {"type": "Verb", "var_name": "verb_3"}
+            ]
+        },
+        {
+            "id": 2,
+            "name": "From Walden",
+            "template": "walden.txt",
+            "portrait": "/portraits/thoreau.jpg",
+            "attributes": [
+                {"type": "Your Name", "var_name": "your_name"},
+                {"type": "Noun", "var_name": "noun_1"},
+                {"type": "Noun", "var_name": "noun_2"},
+                {"type": "Noun", "var_name": "noun_3"},
+                {"type": "Noun", "var_name": "noun_4"},
+                {"type": "Noun", "var_name": "noun_5"},
+                {"type": "Noun", "var_name": "noun_6"},
+                {"type": "Noun", "var_name": "noun_7"},
+                {"type": "Adjective", "var_name": "adjective_1"},
+                {"type": "Adjective", "var_name": "adjective_2"},
+                {"type": "Adjective", "var_name": "adjective_3"},
+                {"type": "Adjective", "var_name": "adjective_4"},
+                {"type": "Verb", "var_name": "verb_1"},
+                {"type": "Verb", "var_name": "verb_2"},
+                {"type": "Verb", "var_name": "verb_3"},
+                {"type": "Verb", "var_name": "verb_4"},
+                {"type": "Verb", "var_name": "verb_5"},
+                {"type": "Verb", "var_name": "verb_6"},
+                {"type": "Superlative Adjective", "var_name": "super_adjective_1"}
+            ]
+        },
+        {
+            "id": 3,
+            "name": "From Prufrock's Love Story",
+            "template": "prufrock.txt",
+            "portrait": "/portraits/thomas-s-eliot.jpg",
+            "attributes": [
+                {"type": "Your Name", "var_name": "your_name"},
+                {"type": "Noun", "var_name": "noun_1"},
+                {"type": "Noun", "var_name": "noun_2"},
+                {"type": "Noun", "var_name": "noun_3"},
+                {"type": "Noun", "var_name": "noun_4"},
+                {"type": "Plural of the Above Noun", "var_name": "plural_of_noun_4"},
+                {"type": "Noun", "var_name": "noun_5"},
+                {"type": "Plural Noun", "var_name": "plural_noun_1"},
+                {"type": "Plural Noun", "var_name": "plural_noun_2"},
+                {"type": "Adjective", "var_name": "adjective_1"},
+                {"type": "Gerund", "var_name": "gerund_1"},
+                {"type": "One of Three Rhyming Plural Nouns", "var_name": "rhyming_plural_noun_1"},
+                {"type": "One of Three Rhyming Plural Nouns", "var_name": "rhyming_plural_noun_2"},
+                {"type": "One of Three Rhyming Plural Nouns", "var_name": "rhyming_plural_noun_3"},
+                {"type": "Number", "var_name": "number_1"},
+                {"type": "Proper Noun", "var_name": "proper_noun_1"},
+                {"type": "Verb", "var_name": "verb_1"},
+                {"type": "Opposite of the Above Verb", "var_name": "verb_1_opposite"},
+                {"type": "Verb", "var_name": "verb_2"},
+                {"type": "Opposite of the Above Verb", "var_name": "verb_2_opposite"}
+            ]
+        }
+    ]
+}

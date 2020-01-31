@@ -1,8 +1,63 @@
-<!DOCTYPE html>
-<head>
-    <title>Mad Libs!</title>
-</head>
-<body>
-    <h2>Enjoy your literary masterpiece!</h2>
-    {{ story|replace("\n","<br>") }}
-</body>
+{% extends "base.html" %}
+{% block head %}
+{{ super() }}
+<style type=text/css> 
+    .container
+    {
+        display: flex;
+    }
+    .leftdiv, .rightdiv 
+    { 
+    padding: 10px;
+    }
+    .topdiv
+    {
+    float: left;
+    width: 100%;
+    }
+    div{ 
+    padding : 1%; 
+    width: 100%; 
+    }
+    img
+    {
+        width:100%;
+    } 
+    .vertalign
+    {
+        vertical-align: middle;
+        display: table-cell;
+        height: 100%;
+    }
+ </style> 
+{% endblock %}
+{% block body %}
+    <div class="topdiv">
+        <h2>Enjoy your literary masterpiece!</h2>
+        {{ render.story|replace("\n","<br>") }}
+    </div>
+    <div class="container">
+        <div class="leftdiv">
+            <h2>Try Changing It Up!</h2>
+            <form action="/show_output" method="post">
+                <fieldset>
+                    <legend>{{ name }}</legend>
+                    <input type="hidden" name="id" value="{{ id }}">
+                    {% for var in attributes %}
+                    {{ var.type }}:<br>
+                    <input type="text" name="{{ var.var_name }}", value="{{ render.attributes[var.var_name] }}"><br>
+                    {% endfor %}
+                    <input type="submit" value="Submit">
+                </fieldset>
+                </form>
+            <form action="/"><input type="submit" value="Try A Different Story"></form>
+        </div>
+
+        <div class="rightdiv">
+            <h2>This is Whose Work You've Now Bastardized</h2>
+            <div class="vertalign">
+                <img src="/static{{ portrait }}">
+            </div>
+        </div>
+    </div>
+{% endblock %}

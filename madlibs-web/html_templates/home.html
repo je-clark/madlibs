@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<head>
-    <title>Mad Libs!</title>
-</head>
-<body>
-    <h1>Choose from the following mad libs!</h1>
+{% extends "base.html" %}
+{% block body %}
+    <h2>Choose from the following mad libs!</h2>
     {% for story in story_list %}
-    <p><a href="/show_form?story={{ story }}">{{ story }}</a></p>
+    <p><a href="/show_form?id={{ story.id }}">{{ story.name }}</a></p>
     {% endfor %}
-</body>
+{% endblock %}
