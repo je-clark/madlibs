@@ -20,7 +20,7 @@
                 {"type": "Adjective", "var_name": "adjective_1"},
                 {"type": "Adjective", "var_name": "adjective_2"},
                 {"type": "Adjective", "var_name": "adjective_3"},
-                {"type": "Superlative Adjective", "var_name": "super_adjective_1"},
+                {"type": "Superlative Adjective", "var_name": "superlative_adjective_1"},
                 {"type": "Verb", "var_name": "verb_1"},
                 {"type": "Verb", "var_name": "verb_2"},
                 {"type": "Verb", "var_name": "verb_3"}
