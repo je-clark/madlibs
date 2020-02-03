@@ -1,6 +1,7 @@
 from flask import Flask, request
 from jinja2 import Environment, FileSystemLoader, meta
 import os, json
+import madlibs_helpers
 
 app = Flask(__name__)
 web_env = Environment(
@@ -10,8 +11,7 @@ story_env = Environment(
         loader=FileSystemLoader(searchpath=r'./stories/templates'),
         trim_blocks=True
     )
-with open(r'./stories/story_index.json') as story_index_file:
-        stories = json.load(story_index_file)
+
 
 
 @app.route('/')
@@ -21,7 +21,8 @@ def home_page():
     '''
     
     home_page_template = web_env.get_template('home.html')
-    home_page = home_page_template.render(story_list=stories["stories"])
+    stories = madlibs_helpers.get_story_list()
+    home_page = home_page_template.render(story_list=stories)
     
     return home_page
 
@@ -33,10 +34,10 @@ def madlib_form():
     story_id = request.args.get('id')
 
     
-    story_info = [story for story in stories["stories"] if int(story_id) == story["id"]][0]
+    story = madlibs_helpers.get_story_from_id(story_id)
     
     form_page_template = web_env.get_template('show_form.html')
-    form_page = form_page_template.render(story_info)
+    form_page = form_page_template.render(story)
     return form_page
 
 @app.route('/show_output', methods=['POST'])
@@ -47,7 +48,7 @@ def present_madlib():
     story_vars = request.form.to_dict()
 
     story_id = story_vars.pop('id') # Returns the value and deletes it from the dictionary
-    story_info = [story for story in stories["stories"] if int(story_id) == story["id"]][0]
+    story_info = madlibs_helpers.get_story_from_id(story_id)
 
     story_template = story_env.get_template(story_info["template"])
     story = story_template.render(story_vars)
@@ -58,6 +59,7 @@ def present_madlib():
     story_info["render"] = render
 
     print(story_info)
+    madlibs_helpers.save_story(story)
     web_template = web_env.get_template('show_output.html')
     show_output = web_template.render(story_info)
     return show_output
