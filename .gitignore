@@ -1,3 +1,4 @@
 *droplet*
 story_archive
 *.pyc
+.vscode
