@@ -15,6 +15,6 @@ def get_story_from_id(id):
 def save_story(story_text):
 
     with open(f'.\\story_archive\\archive_{datetime.date.today().isoformat()}.txt', 'a+', encoding="utf-8") as archive:
-
+        archive.write(f'{datetime.datetime.now().isoformat()}\n')
         archive.write(f'{story_text}\n\n\n\n')
     return True
