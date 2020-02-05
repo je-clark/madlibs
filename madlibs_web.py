@@ -59,7 +59,14 @@ def present_madlib():
     story_info["render"] = render
 
     print(story_info)
-    madlibs_helpers.save_story(story)
+    try:
+        # This is the single most dangerous operation in the whole application.
+        # Multiple threads could end up attempting to write to the same file
+        # at the same time. If there's a conflict, I would rather have an 
+        # incomplete archive than have the entire page fail to load.
+        madlibs_helpers.save_story(story)
+    except:
+        pass
     web_template = web_env.get_template('show_output.html')
     show_output = web_template.render(story_info)
     return show_output
